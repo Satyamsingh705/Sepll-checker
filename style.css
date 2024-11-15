@@ -90,3 +90,45 @@ footer {
     text-align: center;
     padding: 5px;
 }
+
+.checkSpell {
+    color: white;
+    text-align: center;
+}
+
+.input-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.textarea-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px; /* Add padding for spacing from the sides */
+}
+
+.textarea-wrapper {
+    flex: 1;
+    margin: 0 10px; /* Add margin for spacing between the boxes */
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}

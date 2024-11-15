@@ -10,15 +10,53 @@
     <nav>
         <div class="nav-wrapper">
             <div class="nav-logo">
-                <img src="logo.png" alt="Logo" class="logo-image">
+                <img src="https://assets.apilayer.com/apis/spell.png" alt="Logo" class="logo-image" style="width: 10%;height:10%;">
                 <h1>Spell Checker</h1>
             </div>
             <div class="nav-links">
-                <a href="index.php">Home</a>
+                <a href="#">Home</a>
                 <a href="about.php">About</a>
-                <a href="contact.php">Contact</a>
+                <a href="#">Suggestions</a>
             </div>
         </div>
     </nav>
+    <div class="checkSpell">
+        <h1>Correct Your Sentence</h1>
+        <form id="spellCheckForm">
+            <div class="input-box">
+                <div class="textarea-container">
+                    <div class="textarea-wrapper">
+                        <label for="incorrect-text">Incorrect Text</label>
+                        <textarea name="incorrect-text" id="incorrect-text" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="textarea-wrapper">
+                        <label for="corrected-text">Corrected Text</label>
+                        <textarea name="corrected-text" id="corrected-text" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" style="background-color: #81DAE3;">Check</button>
+        </form>
+    </div>
+    <div class="About">
+        <p>Welcome to our project that integrates Autocorrect, Spellchecking, and Named Entity Recognition (NER) into a unified, intelligent text-processing system. This project leverages probabilistic models and sequence modeling techniques to deliver a seamless, precise, and context-aware user experience. By combining these powerful tools, we aim to enhance text accuracy, reduce typographical errors, and accurately identify named entities within text. The system's **autocorrect and spellchecking** components automatically detect and correct user errors, relying on probabilistic methods to ensure contextually relevant suggestions. Meanwhile, the Named Entity Recognition (NER) model identifies critical entities—such as names, locations, and organizations—in the text, facilitating more meaningful analysis and information extraction. Through advanced sequence models, we create a smooth, real-time interaction that continuously learns and adapts to language nuances, making this tool valuable across various applications, from casual writing to data-intensive industries. Explore the website to learn more about the technology, use cases, and performance benchmarks of this innovative solution.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Spell Checker. All Rights Reserved to Dhruv And Satyam</p>
+    </footer>
+
+    <script>
+        document.getElementById('spellCheckForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const incorrectText = document.getElementById('incorrect-text').value;
+            const correctedText = document.getElementById('corrected-text').value;
+
+            // Perform spell check or other operations here
+            // For demonstration, we'll just keep the text in the textareas
+
+            document.getElementById('incorrect-text').value = incorrectText;
+            document.getElementById('corrected-text').value = correctedText;
+        });
+    </script>
 </body>
 </html>
